@@ -1,0 +1,32 @@
+Link: https://github.com/jaweber1996/Exercise06.git
+
+cd Desktop
+git clone https://github.com/jaweber1996/Exercise06.git
+git add student.py
+git add module.py
+git add moduleElement.py
+git commit -m"Add Files"
+git push origin master
+
+git branch test
+git checkout test
+echo "print('Hello World!') >> test.py
+git add test.py
+git commit -m "Add test.py"
+git push origin master
+git checkout master
+git merge test
+git push origin master
+git log --graph -p
+
+PS C:\Users\Jan Weber\Desktop\Ex06\Exercise06> git log --graph -p
+* commit 1d490198aa64063374a8cafc9f3ca9012f3aee7f (HEAD -> master, origin/master, origin/HEAD)
+| Author: jaweber1996 <jan.weber@uzh.ch>
+| Date:   Thu Dec 7 14:25:24 2017 +0100
+|
+|     Add test.py
+|
+| diff --git a/test.py b/test.py
+| new file mode 100644
+| index 0000000..b978e17
+| Binary files /dev/null and b/test.py differ
